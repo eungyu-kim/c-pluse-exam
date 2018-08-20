@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Matrix">
+      <UniqueIdentifier>{4f83736f-40de-46b6-8f71-362fbebce7b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -27,8 +30,8 @@
     <ClInclude Include="41-Flak.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Matrix.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="..\..\Lib\Movement\Matrix.h">
+      <Filter>Matrix</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -38,8 +41,8 @@
     <ClCompile Include="41-Flak.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Matrix.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="..\..\Lib\Movement\Matrix.cpp">
+      <Filter>Matrix</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

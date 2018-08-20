@@ -1,0 +1,10 @@
+﻿  Vector.cpp
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.h(2): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\vector.cpp(13): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\vector.cpp(14): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  42-Acceleration-1.cpp
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.h(2): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\_eungyu\c-pluse-exam\01_c++project\42-acceleration-1\42-acceleration-1\42-acceleration-1.cpp(155): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\42-acceleration-1\42-acceleration-1\42-acceleration-1.cpp(188): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  42-Acceleration-1.vcxproj -> C:\_EunGyu\c-pluse-exam\01_C++Project\42-Acceleration-1\Debug\42-Acceleration-1.exe
