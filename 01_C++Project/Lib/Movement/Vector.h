@@ -10,4 +10,8 @@ private:
 public:
 	Vector(float degree, float length);
 	void DeltaXY(float &dx, float &dy);
+	float GetDegree()
+	{
+		return degree;
+	}
 };
