@@ -1,6 +1,0 @@
-﻿  DefenceObject.cpp
-c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence\43-airdefence\defenceobject.cpp(100): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence\43-airdefence\defenceobject.cpp(101): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence\43-airdefence\defenceobject.cpp(144): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  43-AirDefence.vcxproj -> C:\_EunGyu\c-pluse-exam\01_C++Project\43-AirDefence\Debug\43-AirDefence.exe

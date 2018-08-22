@@ -14,4 +14,5 @@ public:
 	{
 		return degree;
 	}
+	Vector &operator +=(Vector &vector);
 };
