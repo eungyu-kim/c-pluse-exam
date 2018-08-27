@@ -1,20 +1,11 @@
-﻿  stdafx.cpp
-  Matrix.cpp
-c:\users\cksk0\downloads\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-c:\users\cksk0\downloads\01_c++project\lib\movement\matrix.cpp(58): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\cksk0\downloads\01_c++project\lib\movement\matrix.cpp(59): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Vector.cpp
-c:\users\cksk0\downloads\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-c:\users\cksk0\downloads\01_c++project\lib\movement\vector.cpp(13): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\cksk0\downloads\01_c++project\lib\movement\vector.cpp(14): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  Vector.cpp
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\vector.cpp(1): fatal error C1041: 프로그램 데이터베이스 'C:\_EunGyu\c-pluse-exam\01_C++Project\43-AirDefence-1\43-AirDefence\Debug\vc141.pdb'을(를) 열 수 없습니다. 여러 CL.EXE에서 동일한 .PDB 파일에 쓰는 경우 /FS를 사용하십시오.
   43-AirDefence.cpp
-c:\users\cksk0\downloads\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-c:\users\cksk0\downloads\01_c++project\43-airdefence\43-airdefence\43-airdefence.cpp(157): warning C4244: '인수': 'const float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\43-airdefence.cpp(157): warning C4244: '인수': 'const float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   DefenceObject.cpp
-c:\users\cksk0\downloads\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-c:\users\cksk0\downloads\01_c++project\43-airdefence\43-airdefence\defenceobject.cpp(100): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\cksk0\downloads\01_c++project\43-airdefence\43-airdefence\defenceobject.cpp(101): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\cksk0\downloads\01_c++project\43-airdefence\43-airdefence\defenceobject.cpp(144): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\defenceobject.cpp(100): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\defenceobject.cpp(101): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\defenceobject.cpp(144): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다...
-  LINK : C:\Users\cksk0\Downloads\01_C++Project\43-AirDefence\Debug\43-AirDefence.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
-  43-AirDefence.vcxproj -> C:\Users\cksk0\Downloads\01_C++Project\43-AirDefence\Debug\43-AirDefence.exe

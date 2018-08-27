@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "Vector.h"
-#include <math.h>
+
 
 Vector::Vector(float degree, float length)
 {

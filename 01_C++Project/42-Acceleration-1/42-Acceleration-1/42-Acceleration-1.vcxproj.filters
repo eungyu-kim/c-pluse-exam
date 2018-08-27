@@ -33,10 +33,10 @@
     <ClInclude Include="42-Acceleration-1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Lib\Movement\Matrix.h">
+    <ClInclude Include="..\Lib\Movement\Matrix.h">
       <Filter>Matrix</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Lib\Movement\Vector.h">
+    <ClInclude Include="..\Lib\Movement\Vector.h">
       <Filter>Vector</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,10 +47,10 @@
     <ClCompile Include="42-Acceleration-1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Lib\Movement\Matrix.cpp">
+    <ClCompile Include="..\Lib\Movement\Matrix.cpp">
       <Filter>Matrix</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Lib\Movement\Vector.cpp">
+    <ClCompile Include="..\Lib\Movement\Vector.cpp">
       <Filter>Vector</Filter>
     </ClCompile>
   </ItemGroup>

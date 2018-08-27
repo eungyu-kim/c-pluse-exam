@@ -1,0 +1,4 @@
+﻿  Exam_Struct.cpp
+c:\_eungyu\c-pluse-exam\02_c++exam\exam_struct\exam_struct\exam_struct.cpp(37): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  AssemblyInfo.obj : MSIL 모듈이 발견되었습니다. MSIL에 증분 링크를 사용할 수 없습니다. 전체 링크를 수행하고 있습니다.
+  Exam_Struct.vcxproj -> C:\_EunGyu\c-pluse-exam\02_C++Exam\Exam_Struct\Debug\Exam_Struct.exe

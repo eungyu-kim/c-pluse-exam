@@ -1,14 +1,25 @@
-﻿  43-AirDefence.cpp
+﻿  stdafx.cpp
+  Matrix.cpp
 c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\defenceobject.h(13): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\43-airdefence.cpp(157): warning C4244: '인수': 'const float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.cpp(58): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.cpp(59): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Vector.cpp
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\vector.cpp(13): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\vector.cpp(14): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\vector.cpp(32): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\vector.cpp(33): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  43-AirDefence.cpp
+c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-2\43-airdefence\defenceobject.h(13): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-2\43-airdefence\43-airdefence.cpp(157): warning C4244: '인수': 'const float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   DefenceObject.cpp
 c:\_eungyu\c-pluse-exam\01_c++project\lib\movement\matrix.h(3): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\defenceobject.h(13): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\defenceobject.cpp(125): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\defenceobject.cpp(126): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\defenceobject.cpp(138): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\defenceobject.cpp(139): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-1\43-airdefence\defenceobject.cpp(195): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-2\43-airdefence\defenceobject.h(13): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-2\43-airdefence\defenceobject.cpp(125): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-2\43-airdefence\defenceobject.cpp(126): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-2\43-airdefence\defenceobject.cpp(138): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-2\43-airdefence\defenceobject.cpp(139): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\43-airdefence-2\43-airdefence\defenceobject.cpp(195): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다...
-  43-AirDefence.vcxproj -> C:\_EunGyu\c-pluse-exam\01_C++Project\43-AirDefence-1\Debug\43-AirDefence.exe
+  43-AirDefence.vcxproj -> C:\_EunGyu\c-pluse-exam\01_C++Project\43-AirDefence-2\Debug\43-AirDefence.exe

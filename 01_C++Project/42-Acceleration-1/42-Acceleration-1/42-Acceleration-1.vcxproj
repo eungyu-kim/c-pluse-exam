@@ -147,16 +147,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Lib\Movement\Matrix.h" />
-    <ClInclude Include="..\..\Lib\Movement\Vector.h" />
+    <ClInclude Include="..\Lib\Movement\Matrix.h" />
+    <ClInclude Include="..\Lib\Movement\Vector.h" />
     <ClInclude Include="42-Acceleration-1.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Lib\Movement\Matrix.cpp" />
-    <ClCompile Include="..\..\Lib\Movement\Vector.cpp" />
+    <ClCompile Include="..\Lib\Movement\Matrix.cpp" />
+    <ClCompile Include="..\Lib\Movement\Vector.cpp" />
     <ClCompile Include="42-Acceleration-1.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

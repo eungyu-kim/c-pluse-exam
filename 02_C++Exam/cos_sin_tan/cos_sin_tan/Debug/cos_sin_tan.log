@@ -1,0 +1,3 @@
+﻿  cos_sin_tan.cpp
+c:\_eungyu\c-pluse-exam\02_c++exam\cos_sin_tan\cos_sin_tan\cos_sin_tan.cpp(8): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  cos_sin_tan.vcxproj -> C:\_EunGyu\c-pluse-exam\02_C++Exam\cos_sin_tan\Debug\cos_sin_tan.exe

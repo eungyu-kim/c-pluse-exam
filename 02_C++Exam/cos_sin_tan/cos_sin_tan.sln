@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cos_sin_tan", "cos_sin_tan\cos_sin_tan.vcxproj", "{62A0F78A-8AE3-4167-BF16-1ECD0CF5A708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62A0F78A-8AE3-4167-BF16-1ECD0CF5A708}.Debug|x64.ActiveCfg = Debug|x64
+		{62A0F78A-8AE3-4167-BF16-1ECD0CF5A708}.Debug|x64.Build.0 = Debug|x64
+		{62A0F78A-8AE3-4167-BF16-1ECD0CF5A708}.Debug|x86.ActiveCfg = Debug|Win32
+		{62A0F78A-8AE3-4167-BF16-1ECD0CF5A708}.Debug|x86.Build.0 = Debug|Win32
+		{62A0F78A-8AE3-4167-BF16-1ECD0CF5A708}.Release|x64.ActiveCfg = Release|x64
+		{62A0F78A-8AE3-4167-BF16-1ECD0CF5A708}.Release|x64.Build.0 = Release|x64
+		{62A0F78A-8AE3-4167-BF16-1ECD0CF5A708}.Release|x86.ActiveCfg = Release|Win32
+		{62A0F78A-8AE3-4167-BF16-1ECD0CF5A708}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9BD9116-12C9-4AFC-97AF-4B278F69F227}
+	EndGlobalSection
+EndGlobal
