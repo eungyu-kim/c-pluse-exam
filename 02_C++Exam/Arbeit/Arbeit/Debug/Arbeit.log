@@ -1,0 +1,4 @@
+﻿  Arbeit.cpp
+c:\_eungyu\c-pluse-exam\02_c++exam\arbeit\arbeit\arbeit.cpp(28): warning C4244: 'return': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Arbeit.obj : MSIL 모듈이 발견되었습니다. MSIL에 증분 링크를 사용할 수 없습니다. 전체 링크를 수행하고 있습니다.
+  Arbeit.vcxproj -> C:\_EunGyu\c-pluse-exam\02_C++Exam\Arbeit\Debug\Arbeit.exe

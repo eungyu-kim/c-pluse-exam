@@ -1,0 +1,9 @@
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  StringClass.cpp
+c:\_eungyu\c-pluse-exam\02_c++exam\stringclass\stringclass\stringclass.cpp(6): error C2976: 'std::array': 템플릿 인수가 너무 적습니다.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\utility(512): note: 'std::array' 선언을 참조하십시오.
+c:\_eungyu\c-pluse-exam\02_c++exam\stringclass\stringclass\stringclass.cpp(6): error C3699: '^': 'std::array' 형식에 이 간접 참조를 사용할 수 없습니다.
+  c:\_eungyu\c-pluse-exam\02_c++exam\stringclass\stringclass\stringclass.cpp(6): note: 구문 분석을 계속하기 위해 컴파일러에서 '^'을(를) '*'(으)로 바꾸고 있습니다.
+c:\_eungyu\c-pluse-exam\02_c++exam\stringclass\stringclass\stringclass.cpp(10): error C2143: 구문 오류: ';'이(가) 'return' 앞에 없습니다.
+  코드를 생성하고 있습니다...
