@@ -1,0 +1,5 @@
+﻿  Template5.cpp
+c:\_eungyu\c-pluse-exam\02_c++exam\template5\template5\template5.cpp(17): warning C5037: 'Point<T>::Point': 클래스 템플릿 멤버의 확장 정의에는 기본 인수가 포함될 수 없습니다.
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL 모듈이 발견되었습니다. MSIL에 증분 링크를 사용할 수 없습니다. 전체 링크를 수행하고 있습니다.
+  Template5.vcxproj -> C:\_EunGyu\c-pluse-exam\02_C++Exam\Template5\Debug\Template5.exe
