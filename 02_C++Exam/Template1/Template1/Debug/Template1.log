@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  Template1.cpp
+c:\_eungyu\c-pluse-exam\02_c++exam\template1\template1\template1.cpp(2): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+c:\_eungyu\c-pluse-exam\02_c++exam\template1\template1\template1.cpp(15): warning C4244: '인수': 'double'에서 'T'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              T=int
+          ]
+  코드를 생성하고 있습니다...
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL 모듈이 발견되었습니다. MSIL에 증분 링크를 사용할 수 없습니다. 전체 링크를 수행하고 있습니다.
+  Template1.vcxproj -> C:\_EunGyu\c-pluse-exam\02_C++Exam\Template1\Debug\Template1.exe
