@@ -1,0 +1,9 @@
+﻿  stdafx.cpp
+  28-STL-vector.cpp
+c:\_eungyu\c-pluse-exam\01_c++project\28-stl-vector\28-stl-vector\28-stl-vector.cpp(35): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\_eungyu\c-pluse-exam\01_c++project\28-stl-vector\28-stl-vector\28-stl-vector.cpp(44): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  AssemblyInfo.cpp
+  코드를 생성하고 있습니다...
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+  28-STL-vector.obj : MSIL 모듈이 발견되었습니다. MSIL에 증분 링크를 사용할 수 없습니다. 전체 링크를 수행하고 있습니다.
+  28-STL-vector.vcxproj -> C:\_EunGyu\c-pluse-exam\01_C++Project\28-STL-vector\Debug\28-STL-vector.exe
