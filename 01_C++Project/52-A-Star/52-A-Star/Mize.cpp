@@ -11,6 +11,12 @@ Mize::Mize() // ¹Ì·Î »ý¼ºÀÚ
 			cell[y][x] = EmptyCell;
 		}
 	}
+
+	// Áß°£¿¡ Àå¾Ö¹°À» ¸¸µê
+	for (int x = 3; x < mizeSize - 2; ++x)
+		cell[x][mizeSize / 2] = Obstacle;
+	for (int y = 3; y < mizeSize - 2; ++y)
+		cell[mizeSize / 2][y] = Obstacle;
 }
 
 Coord::Coord(int x, int y)	// ÁÂÇ¥ x, y¼³Á¤ »ý¼ºÀÚ
@@ -25,9 +31,11 @@ Monster::Monster(int x, int y)	// ¸ó½ºÅÍ À§Ä¡ ¼³Á¤ »ý¼ºÀÚ
 
 }
 
-UnitMove::UnitMove(Coord locate, Coord from)
+UnitMove::UnitMove(Coord locate, Coord from, float distFromStart)
 	: locate(locate), from(from)
 {
+	this->distFromStart = distFromStart;
+
 }
 
 void Monster::PathFind(Mize &mize, int goalX, int goalY)	// ¸ñÇ¥ À§Ä¡ ¼³Á¤
@@ -41,7 +49,7 @@ void Monster::PathFind(Mize &mize,Coord from, Coord goal) // ÇöÀç À§Ä¡ -> ¸ñÇ¥ À
 	UnitMoveList closeList;	// ÀÌ¹Ì ÀÌµ¿ÇÑ ¿µ¿ª
 
 	// 1. ¸ó½ºÅÍÀÇ ÇöÀç À§Ä¡ ¾ÕÀ¸·Î °¥ ¼ö ÀÖ´Â ¿µ¿ªÀ¸·Î ÀúÀå
-	openList.push_back(UnitMove(from, from));
+	openList.push_back(UnitMove(from, from, 0));
 
 	while (true)
 	{
@@ -51,8 +59,7 @@ void Monster::PathFind(Mize &mize,Coord from, Coord goal) // ÇöÀç À§Ä¡ -> ¸ñÇ¥ À
 			return;
 		}
 
-		UnitMove cell = openList.front();	// ÀúÀå À§Ä¡ Áß ¸Ç ¾ÕÀ» ²¨³½´Ù.
-		openList.erase(openList.begin());	// ¸®½ºÆ®ÀÇ ÃÖÃÊ °´Ã¼ Á¦°Å
+		UnitMove cell = openList.ShortestPath();
 
 		if (cell.locate.x == goal.x && cell.locate.y == goal.y)
 		{	// goal ±îÁöÀÇ ÀüÃ¼ ±æÃ£±â ¼º°ø!!
@@ -92,7 +99,15 @@ void Monster::PathFind(Mize &mize,Coord from, Coord goal) // ÇöÀç À§Ä¡ -> ¸ñÇ¥ À
 					// ¿©±â ±îÁö ¿ÔÀ¸¸é nextCell ¿¡ °ü½ÉÀ» °¡Áö°í Å½»öÀ» ÇØ¾ßÇÑ´Ù.
 					// openList¿¡ Ãß°¡ ÇØ¼­ ´ÙÀ½¿¡ nextCellÀ» Áß½ÉÀ¸·Î
 					// Å½»öÀ» ÇØ¾ß ÇÑ´Ù.
-					openList.push_back(UnitMove(nextCell, cell.locate));
+					float dist_Cell_NextCell;
+					if (dx == 0 || dy == 0)		// ÁÂ¿ì ¶Ç´Â »óÇÏ °ü°èÀÎ °æ¿ì
+						dist_Cell_NextCell = 1;
+					else   // ´ë°¢¼± °ü°è
+						dist_Cell_NextCell = 1.414;
+
+
+					float distance = cell.distFromStart + dist_Cell_NextCell;
+					openList.push_back(UnitMove(nextCell, cell.locate, distance));
 				}
 			}
 		}
