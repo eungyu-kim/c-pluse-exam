@@ -1,5 +1,4 @@
 ﻿  52-A-Star.cpp
+c:\_eungyu\c-pluse-exam\01_c++project\52-a-star\52-a-star\52-a-star.cpp(10): error C2661: 'Monster::PathFind': 오버로드된 함수에서 2개의 매개 변수를 사용하지 않습니다.
   Mize.cpp
   코드를 생성하고 있습니다...
-  52-A-Star.obj : MSIL 모듈이 발견되었습니다. MSIL에 증분 링크를 사용할 수 없습니다. 전체 링크를 수행하고 있습니다.
-  52-A-Star.vcxproj -> C:\_EunGyu\c-pluse-exam\01_C++Project\52-A-Star\Debug\52-A-Star.exe

@@ -1,11 +1,13 @@
 #pragma once
 #include <iostream>
 #include <list>
+#include <algorithm>
 using namespace std;
 
 const int mizeSize = 10;	// 미로 사이즈
 // 셀안은 비어있거나 장애물이 있다.
-enum CellType { EmptyCell, obstacle};	
+enum CellType { EmptyCell, obstacle};
+class Coord;
 class Mize	// 미로를 관리할 객체
 {
 private:
@@ -13,6 +15,7 @@ private:
 
 public:
 	Mize();
+	bool CanEntry(Coord coords);	// 좌표 안에 들어갈 수 있는가?
 };
 
 class Coord	// 미로 상에 위치를 나타내는 좌표
@@ -34,9 +37,9 @@ class Monster
 {
 private:
 	Coord locate;	// 현재 위치
-	void PathFind(Coord from, Coord goal);	// 길찾기 함수
+	void PathFind(Mize &mize, Coord from, Coord goal);	// 길찾기 함수
 	// 현재 위치 부터, 끝나는 위치
 public:
 	Monster(int x, int y);	//생성자
-	void PathFind(int goalX, int goalY);	// 목적지 설정 함수
+	void PathFind(Mize &mize, int goalX, int goalY);	// 목적지 설정 함수
 };

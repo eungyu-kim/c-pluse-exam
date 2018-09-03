@@ -28,15 +28,14 @@ Monster::Monster(int x, int y)	// 몬스터 위치 설정 생성자
 UnitMove::UnitMove(Coord locate, Coord from)
 	: locate(locate), from(from)
 {
-	// 복사 생성자로 생성자 초기화
 }
 
-void Monster::PathFind(int goalX, int goalY)	// 목표 위치 설정
+void Monster::PathFind(Mize &mize, int goalX, int goalY)	// 목표 위치 설정
 {
-	PathFind(locate, Coord(goalX, goalY));	// 현재 위치 -> 목표 위치 탐색
+	PathFind(mize, locate, Coord(goalX, goalY));	// 현재 위치 -> 목표 위치 탐색
 }
 
-void Monster::PathFind(Coord from, Coord goal) // 현재 위치 -> 목표 위치 탐색
+void Monster::PathFind(Mize &mize,Coord from, Coord goal) // 현재 위치 -> 목표 위치 탐색
 {
 	list<UnitMove> openList;	// 앞으로 갈 수 있는 영역
 	list<UnitMove> closeList;	// 이미 이동한 영역
@@ -58,8 +57,46 @@ void Monster::PathFind(Coord from, Coord goal) // 현재 위치 -> 목표 위치 탐색
 				{
 					// 현재 위치(x,y) x + dx , y + dy 
 					Coord nextCell(cell.locate.x + dx, cell.locate.y + dy);
+
+					if (!mize.CanEntry(nextCell))
+					{
+						continue;
+					}
+
+					list<UnitMove>::iterator fnd =
+						find_if(closeList.begin(), closeList.end(),
+							// 찾을 객체 람다식으로 정의
+							[&nextCell](UnitMove &unitMove)->bool
+					{
+						if (unitMove.locate.x == nextCell.x &&
+							unitMove.locate.y == nextCell.y)
+							return true;
+						return false;
+					});
+
+					if (fnd != closeList.end())
+					{
+						continue;
+					}
 				}
 			}
 		}
 	}
+}
+
+bool::Mize::CanEntry(Coord coords)
+{
+	// (x, y)로 들어갈 수 있느냐는 그 위치의 셀이 비어있느냐는 뜻
+	int x = coords.x;
+	int y = coords.y;
+
+	// 미로 영역 밖으로 나갈 수는 없다.
+	if (x < 0 || x >= mizeSize)
+		return false;
+	if (y < 0 || y >= mizeSize)
+		return false;
+
+	if (cell[x][y] == EmptyCell)
+		return true;
+	return false;
 }
