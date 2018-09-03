@@ -37,16 +37,29 @@ void Monster::PathFind(Mize &mize, int goalX, int goalY)	// 목표 위치 설정
 
 void Monster::PathFind(Mize &mize,Coord from, Coord goal) // 현재 위치 -> 목표 위치 탐색
 {
-	list<UnitMove> openList;	// 앞으로 갈 수 있는 영역
-	list<UnitMove> closeList;	// 이미 이동한 영역
+	UnitMoveList openList;	// 앞으로 갈 수 있는 영역
+	UnitMoveList closeList;	// 이미 이동한 영역
 
 	// 1. 몬스터의 현재 위치 앞으로 갈 수 있는 영역으로 저장
 	openList.push_back(UnitMove(from, from));
 
 	while (true)
 	{
+		if (openList.empty())	// 리스트가 비어 있다면
+		{
+			cout << "길을 찾을 수 없음" << endl;
+			return;
+		}
+
 		UnitMove cell = openList.front();	// 저장 위치 중 맨 앞을 꺼낸다.
 		openList.erase(openList.begin());	// 리스트의 최초 객체 제거
+
+		if (cell.locate.x == goal.x && cell.locate.y == goal.y)
+		{	// goal 까지의 전체 길찾기 성공!!
+			// closeList에서 전체 경로 찾기
+			closeList.TotalPath(cell);
+			return;
+		}
 
 		for (int dy = -1; dy <= 1; ++dy)
 		{
@@ -63,24 +76,29 @@ void Monster::PathFind(Mize &mize,Coord from, Coord goal) // 현재 위치 -> 목표 �
 						continue;
 					}
 
-					list<UnitMove>::iterator fnd =
-						find_if(closeList.begin(), closeList.end(),
-							// 찾을 객체 람다식으로 정의
-							[&nextCell](UnitMove &unitMove)->bool
-					{
-						if (unitMove.locate.x == nextCell.x &&
-							unitMove.locate.y == nextCell.y)
-							return true;
-						return false;
-					});
-
-					if (fnd != closeList.end())
-					{
+					if (closeList.IsInList(nextCell))
+					{	// closeList 안에 nextCell이 들어 있다.
+						// => nextCell 위치는 이미 검색이 끝났다!
 						continue;
 					}
+
+					// 만약 nextCell이 openList 안에 있다면 
+					// 이미 관심을 가진 객체이므로 다시 관심을가질 필요가 없다.
+					if (openList.IsInList(nextCell))
+					{	// openList 안에 nextCell이 들어 있다.
+						continue;
+					}
+
+					// 여기 까지 왔으면 nextCell 에 관심을 가지고 탐색을 해야한다.
+					// openList에 추가 해서 다음에 nextCell을 중심으로
+					// 탐색을 해야 한다.
+					openList.push_back(UnitMove(nextCell, cell.locate));
 				}
 			}
 		}
+
+		// 여기 까지해서 openList에서 꺼낸 cell의 여덟방향셀 탐색 완료
+		closeList.push_back(cell);
 	}
 }
 
