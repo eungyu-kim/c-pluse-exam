@@ -28,7 +28,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="32-STL-FunctorAndLambda.cpp">
+    <ClCompile Include="32-STL-Lambda.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="AssemblyInfo.cpp">
